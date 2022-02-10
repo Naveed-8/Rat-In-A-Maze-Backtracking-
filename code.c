@@ -16,19 +16,19 @@ int solution(int r, int c,int mat[MAX][MAX])
         ansMatrix[r][c] = 1;
         if (solution(r - 1, c, mat))
         {
-            return true;
+                return true;
         }
         if (solution(r + 1, c, mat))
         {
-            return true;
+                return true;
         }
         if (solution(r, c - 1, mat))
         {
-            return true;
+                return true;
         }
         if (solution(r, c + 1, mat))
         {
-            return true;
+                return true;
         }
         ansMatrix[r][c] = 0;
         return false;
